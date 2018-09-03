@@ -4,7 +4,9 @@
   "description": "A physics simulator written in TS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/parcel serve src/index.html",
+    "watch": "./node_modules/.bin/parcel watch src/index.html"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/sohnryang/physics-simulator-ts/issues"
   },
-  "homepage": "https://github.com/sohnryang/physics-simulator-ts#readme"
+  "homepage": "https://github.com/sohnryang/physics-simulator-ts#readme",
+  "devDependencies": {
+    "parcel": "^1.9.7",
+    "typescript": "^3.0.3"
+  }
 }
