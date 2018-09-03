@@ -2,7 +2,7 @@
  * box.ts -- a box
  */
 
-import {Point} from './point';
+import { Point } from './point';
 
 export class Box {
     public minPoint: Point;
