@@ -1,7 +1,10 @@
-import { Box } from './box'
+import { Circle } from './circle';
 import { Point } from './point'
 
-const box = new Box(new Point(0, 0), new Point(5, 5));
-
-console.log(`minPoint: (${box.minPoint.x}, ${box.minPoint.y})`);
-console.log(`maxPoint: (${box.maxPoint.x}, ${box.maxPoint.y})`);
+let circle = new Circle(new Point(0, 0), 1);
+let canvasElem = <HTMLCanvasElement>document.getElementById('mainCanvas');
+let context = canvasElem.getContext('2d');
+context.beginPath();
+context.arc(circle.position.x + 10, circle.position.y,
+            circle.radius * 50, 0, 2 * Math.PI);
+context.stroke();
